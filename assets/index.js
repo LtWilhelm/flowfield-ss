@@ -10,7 +10,7 @@ let particles = [];
 let flowfield = [];
 
 function setup() {
-  createCanvas(innerWidth, innerHeight - 10)
+  createCanvas(innerWidth, innerHeight)
   cols = floor(width / scl)
   rows = floor(height / scl)
 

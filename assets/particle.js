@@ -6,6 +6,7 @@ function Particle() {
   this.color = 0
 
   this.update = function () {
+    if (this.vel.equals(createVector(0, 0))) this.vel.add(p5.Vector.random2D())
     this.vel.add(this.acc);
     this.vel.limit(this.maxSpeed)
     this.pos.add(this.vel)
