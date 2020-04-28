@@ -40,8 +40,10 @@ function draw() {
     yoff += inc
   }
   zoff += 0.001
-  particles.forEach(e => e.follow(flowfield))
-  particles.forEach(e => e.update())
-  particles.forEach(e => e.show())
-  particles.forEach(e => e.edges())
+  particles.forEach(e => {
+    e.follow(flowfield)
+    e.update()
+    e.show()
+    e.edges()
+  })
 }
